@@ -15,6 +15,6 @@ router.get("/logout", logoutClient);
 router.get("/refreshtoken", refreshClientToken);
 router.get("/:id",clientadminGuard, selfGuard, findByIdClient);
 router.put("/:id", clientadminGuard, selfGuard, updateClient);
-router.delete("/:id", clientadminGuard, selfGuard, updateClient);
+router.delete("/:id", clientadminGuard, selfGuard, deleteClient);
 
 module.exports = router;
