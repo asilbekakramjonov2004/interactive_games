@@ -1,5 +1,5 @@
 {
-    "port":3003,
+    "port":3030,
     "db_host":"localhost",
     "db_username":"postgres",
     "db_password":"5432",
