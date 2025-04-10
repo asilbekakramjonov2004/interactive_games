@@ -15,14 +15,20 @@ app.use("/api", mainRouter);
 
 async function start() {
   try {
-    await sequelize.authenticate()
-    await sequelize.sync({alter: true})
+    console.log("🔁 Connecting to database...");
+    await sequelize.authenticate();
+    console.log("✅ DB connected");
+
+    await sequelize.sync({ alter: true });
+    console.log("🔄 Tables synced");
+
     app.listen(PORT, () => {
-      console.log(`Server started at: http://localhost:${PORT}`);
+      console.log(`🚀 Server started at: http://localhost:${PORT}`);
     });
   } catch (error) {
-    console.log(error);
+    console.log("❌ Error while starting the server:", error);
   }
 }
+
 
 start();
