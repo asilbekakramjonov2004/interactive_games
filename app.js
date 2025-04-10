@@ -13,6 +13,10 @@ app.use(cookieParser());
 
 app.use("/api", mainRouter);
 
+app.listen(PORT, () => {
+  console.log(`🚀 Server started at: http://localhost:${PORT}`);
+});
+
 async function start() {
   try {
     console.log("🔁 Connecting to database...");
