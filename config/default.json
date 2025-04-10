@@ -1,0 +1,29 @@
+{
+    "port":3003,
+    "db_host":"localhost",
+    "db_username":"postgres",
+    "db_password":"5432",
+    "db_port":5432,
+    "api_url": "http://localhost:3003",
+    "smtp_password": "nhotkwucqrwmfasi",
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "asilbekakramjonov2004@gmail.com",
+    "db_name":"interactive_games",
+
+    "access_keyclients": "UserAccessTokenSecretKey",
+    "refresh_keyclients": "UserRefreshTokenSecretKey",
+    "access_timeclients": "15h",
+    "refresh_timeclients": "30d",
+
+    "access_keyowners": "OwnerAccessTokenSecretKey",
+    "refresh_keyowners": "OwnerRefreshTokenSecretKey",
+    "access_timeowners": "15h",
+    "refresh_timeowners": "30d",
+
+    "access_keyadmins": "adminsAccessTokenSecretKey",
+    "refresh_keyadmins": "adminsRefreshTokenSecretKey",
+    "access_timeadmins": "15h",
+    "refresh_timeadmins": "30d",
+    "refresh_cookie_time": 1296000000
+}
