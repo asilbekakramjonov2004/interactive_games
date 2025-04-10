@@ -14,6 +14,6 @@ router.get("/logout", logoutAdmin);
 router.get("/refreshtoken", refreshTokenAdmin);
 router.get("/:id", adminGuard, selfGuarg, findByIdAdmin);
 router.put("/:id", adminGuard, selfGuarg, updateAdmin);
-router.delete("/:id", adminGuard, checkAdminGuard, deleteAdmin);
+router.delete("/:id", adminGuard, selfGuarg, deleteAdmin);
 
 module.exports = router;

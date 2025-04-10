@@ -2,7 +2,7 @@
 module.exports = function (req, res, next) {
   const id = req.params.id;
   
-  if (req.user.is_creator) {
+  if (req.user.is_active) {
     return next();
   }
   
